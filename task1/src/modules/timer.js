@@ -1,9 +1,8 @@
-const timerHours = document.getElementById("timer-hours");
-const timerMinutes = document.getElementById("timer-minutes");
-const timerSeconds = document.getElementById("timer-seconds");
+const updateTimer = () => {
+  const timerHours = document.getElementById("timer-hours");
+  const timerMinutes = document.getElementById("timer-minutes");
+  const timerSeconds = document.getElementById("timer-seconds");
 
-
-export function updateTimer(){
   let hours = +timerHours.innerText;
   let seconds = +timerSeconds.innerText;
   let minutes = +timerMinutes.innerText;
@@ -34,3 +33,5 @@ export function updateTimer(){
 
   const timerInterval = setInterval(decrementTime, 1000);
 }
+
+export default updateTimer;
