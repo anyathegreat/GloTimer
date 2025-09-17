@@ -4,6 +4,7 @@ import modal from "./modules/modal.js"
 import scroll  from "./modules/scroll.js";
 import calculator from './modules/calculator.js';
 import validator from './modules/validator.js';
+import tabs from './modules/tabs.js';
 
 updateTimer();
 menu();
@@ -11,3 +12,4 @@ modal();
 scroll();
 calculator();
 validator();
+tabs();
