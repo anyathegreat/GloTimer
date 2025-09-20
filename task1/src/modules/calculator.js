@@ -70,34 +70,6 @@ const calculator = (price = 100) => {
                 updateTime();
         }
     });
-
-
-        // const totalPriceElement = document.getElementById('totalPrice');
-        // const updatePriceButton = document.getElementById('updatePrice');
-
-        // updatePriceButton.addEventListener('click', () => {
-        //     const oldPrice = parseInt(totalPriceElement.textContent, 10);
-        //     const newPrice = Math.floor(Math.random() * 2000) + 1; // Случайная новая цена от 1 до 2000
-        //     const duration = 2000; // 2 секунды для анимации
-        //     const frameRate = 30; // 30 обновлений в секунду
-        //     const totalFrames = Math.floor(duration / (1000 / frameRate)); // Количество кадров для анимации
-        //     const priceChange = (newPrice - oldPrice) / totalFrames; // Изменение цены на каждом кадре
-
-        //     let currentFrame = 0; // Текущий кадр
-        //     const interval = setInterval(() => {
-        //         currentFrame++;
-
-        //         // Вычисляем новое значение цены
-        //         const newPriceValue = Math.round(oldPrice + priceChange * currentFrame);
-        //         totalPriceElement.textContent = newPriceValue;
-
-        //         // Если достигли последнего кадра, очищаем интервал и устанавливаем окончательную цену
-        //         if (currentFrame >= totalFrames) {
-        //             clearInterval(interval);
-        //             totalPriceElement.textContent = newPrice; // Устанавливаем конечное значение
-        //         }
-        //     }, 1000 / frameRate); // Интервал вызова в миллисекундах
-        // });
 }
 
 export default calculator;
